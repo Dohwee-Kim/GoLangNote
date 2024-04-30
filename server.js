@@ -1,5 +1,5 @@
-const ACCESS_TOKEN_SECRET = "1bd611a49759201174376aeb76d68c1580d64d6c397c98ded09b50bd1a7a7170"
-const REFRESH_TOKEN_SECRET = "1bd611a49759201174376aeb76d68c1580d64d6c397c98ded09b50bd1a7a7170"
+const ACCESS_TOKEN_SECRET = ""
+const REFRESH_TOKEN_SECRET = ""
 
 const PORT = 12010 
 const express = require('express')
@@ -106,4 +106,10 @@ app.post('/refresh', (req, res) => {
             }
         }
     }
+})
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+    console.log(`Login request: http://localhost:${PORT}/login`);
+    console.log(`refresh request : http://localhost:${PORT}/refresh`);
 })
