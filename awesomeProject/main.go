@@ -7,5 +7,12 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Print("Hello Go World")
+	var taskOne = "Test string"
+	fmt.Print("Welcome to my Todolist App!\n")
+	fmt.Println(taskOne)
+	test()
+}
+
+func test() {
+	fmt.Println("TEst Function inside")
 }
